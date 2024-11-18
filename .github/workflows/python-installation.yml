@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        py-version: [3.12]
+        py-version: [3.12, 3.14]
         os: [ubuntu-22.04, macos-13]
     runs-on: ${{ matrix.os }}
     steps:
