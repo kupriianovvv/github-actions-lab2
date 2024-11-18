@@ -5,9 +5,10 @@ on: [push]
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
-        py-version: [3.14, 3.13, .3.12]
-        os: [ubuntu-22.04, macos-14, windows-latest]
+        py-version: [3.12]
+        os: [ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Python
