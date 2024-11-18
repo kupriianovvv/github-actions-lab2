@@ -10,8 +10,7 @@ jobs:
         py-version: [3.12, 3.13, 3.11]
         os: [ubuntu-22.04, macos-13, windows-2022]
         exclude:
-          - os: windows-2022
-            py-version: 3.11
+          - os: macos-13
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Python
